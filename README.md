@@ -2,7 +2,6 @@
 
 * Clone and Install the library `git clone https://github.com/LeMonADE-project/LeMonADE.git`
 * Install cmake (minimum version 2.8)
-* Go to one of the project directories and perform the standard build of LeMonADE
 * This directory can be compiled by
  
 ````sh
@@ -13,14 +12,11 @@
     cmake -DLEMONADE_DIR=</path/to/LeMonADE-library/>  ..
     make
 ````
-* There is an option -DLEMONADE_TESTS which can be either ON or OFF and does compile the tests
- in the test directory. Please write tests for your code to verify the correctness!!! This 
- helps to 
-
+* See Tests section for turn on tests.
 ## Examples
 
 * in analyzers and updaters examples files can be found
-* the are used in [the example project](projects/exampleProject/)
+* they are used in [the example project](projects/exampleProject/)
 
 ## Tests
 
@@ -36,6 +32,11 @@
   ./testsLeMonADE
   `````
 * Please write tests although it might appear annoying but it helps you to find nasty bugs and tests the correctness of your algorithms!
+
+## Contributions
+
+* Any contributions making the programm better are welcome as well as hints for bugs.
+* Every contribution should be made by following the guidelines made by the [gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
  
 

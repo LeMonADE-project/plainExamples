@@ -1,0 +1,3 @@
+add_subdirectory(exampleProject)
+add_subdirectory(examplesLinearChains)
+

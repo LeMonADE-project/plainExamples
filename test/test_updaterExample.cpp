@@ -1,10 +1,10 @@
 // use the catch file but do not add the #define CATCH_CONFIG_MAIN !!
-#include "utility/extern/catchorg/catch2/catch.hpp"
+#include "../utility/extern/catchorg/catch2/catch.hpp"
 
 #include <LeMonADE/core/Ingredients.h>
 #include <LeMonADE/feature/FeatureMoleculesIO.h>
 
-#include "updater/UpdaterExample.h"
+#include "../updater/UpdaterExample.h"
 
 typedef LOKI_TYPELIST_1(FeatureMoleculesIO) Features;
 typedef ConfigureSystem<VectorInt3,Features,4> Config;

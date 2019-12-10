@@ -1,6 +1,4 @@
-cmake_minimum_required (VERSION 2.8)
-
-## ###############  add your executables here ############# ##
+## ###############  add your executables here and link them to LeMonADE ############# ##
 add_executable(linearChainIdeal lemonade_example_main.cpp)
 target_link_libraries(linearChainIdeal LeMonADE)
 

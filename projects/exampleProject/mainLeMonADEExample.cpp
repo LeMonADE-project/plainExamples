@@ -33,13 +33,13 @@ along with LeMonADE.  If not, see <http://www.gnu.org/licenses/>.
 
 
 // include your own updater
-#include "updater/UpdaterExample.h"
+#include "../../updater/UpdaterExample.h"
 
 // include your own analyze
-#include "analyzer/AnalyzerExample.h"
+#include "../../analyzer/AnalyzerExample.h"
 
 // read in utilities
-#include "utility/extern/catchorg/clara/clara.hpp"
+#include "../../utility/extern/catchorg/clara/clara.hpp"
 
 
 int main(int argc, char* argv[])
@@ -51,7 +51,9 @@ int main(int argc, char* argv[])
     uint32_t parameterUpdater(0);
 
     bool showHelp;
-
+    // here we use the clara command line parser from catchorg
+    // its just a single header file which is included on the top 
+    // for more information: https://github.com/catchorg/Clara
     auto parser
     = clara::Opt( parameterAnalyzer, "parameterAnalyzer" )
         ["-a"]["--analyzer"]

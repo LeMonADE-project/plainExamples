@@ -17,8 +17,8 @@ link_directories (${LEMONADE_LIBRARY_DIR})
 set (EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}/bin")
 
 #define flags for the gcc compiler 
-set (CMAKE_CXX_FLAGS " -O3 -msse2 -mssse3 -std=c++11 -fexpensive-optimizations -std=c++11")
-set (CMAKE_C_FLAGS "-O3 -msse2 -mssse3 -std=c++11-fexpensive-optimizations -std=c++11")
+set (CMAKE_CXX_FLAGS " -O3 -msse2 -mssse3 -std=c++11 -fexpensive-optimizations -std=c++11 -Wno-error=narrowing")
+set (CMAKE_C_FLAGS "-O3 -msse2 -mssse3 -std=c++11-fexpensive-optimizations -std=c++11 -Wno-error=narrowing")
 
 #add the relevant subdirectories for doing fancy stuff 
 add_subdirectory(projects)

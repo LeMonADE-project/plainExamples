@@ -1,3 +1,5 @@
+# plainExamples
+
 ## Installation
 
 * Clone and Install the library `git clone https://github.com/LeMonADE-project/LeMonADE.git`
@@ -14,9 +16,29 @@
 ````
 * See Tests section for turn on tests.
 ## Examples
+* can be found in the [project folder](projects)
 
-* in analyzers and updaters examples files can be found
-* they are used in [the example project](projects/exampleProject/)
+### exampleProject
+* simple template introducing analyzers and updaters
+* provides the main to start with
+
+### examplesLinearChains:lemonade_example_main.cpp
+* creation and simulation of a single polymer chain
+* no excluded volume condition == ideal case
+
+### examplesLinearChains:lemonade_example_main_exclvol.cpp
+* creation and simulation of a single polymer chain
+* with excluded volume condition == real case
+
+### examplesLinearChains:lemonade_example_main_nninter.cpp
+* creation and simulation of a single polymer chain and explicit solvent
+* with excluded volume and interaction between polymer and solvent -> poor solvent condition
+
+### exampleConnection:lemonade_example_main_exvol_crosslinking.cpp
+* creation and simulation of a solution of polymer chains with explicit cross-linker
+* with excluded volume condition
+* chain ends can be cross-linked with tetra-functional cross-linker -> end-linked polymer network
+
 
 ## Tests
 
